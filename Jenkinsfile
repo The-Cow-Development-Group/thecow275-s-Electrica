@@ -18,7 +18,7 @@ catchError() {
         stage("Checkout") {
             checkout scm
             
-            cmd """set -x
+            bat """set -x
                   git submodule foreach "git reset --hard || true" || true
                   git reset --hard || true
                   git submodule update --init || true
@@ -29,7 +29,7 @@ catchError() {
 
         withDockerContainer('jdk1.8.0_101') {
             stage("Build") {
-                cmd """set -x
+                bat """set -x
                       ./gradlew build -x test
                    """
 
@@ -40,7 +40,7 @@ catchError() {
             
             stage("Test") {
                 try {
-                    cmd """set -x
+                    bat """set -x
                           ./gradlew clean test
                        """
 
