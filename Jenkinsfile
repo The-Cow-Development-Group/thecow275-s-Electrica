@@ -27,7 +27,7 @@ catchError() {
 
         milestone label: 'Checkout complete'
 
-        withDockerContainer('openjdk:8-jdk') {
+        withDockerContainer('jdk1.8.0_101') {
             stage("Build") {
                 sh """set -x
                       ./gradlew build -x test
