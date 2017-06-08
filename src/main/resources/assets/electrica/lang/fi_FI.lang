@@ -1,0 +1,26 @@
+< en_US.lang - English localization file for the mod Thecow275's Electrica >
+item.ingotcopper.name=Kupari Harkko
+tile.orecopper.name=Kupari Malmi
+item.pickaxecopper.name=Kupari Hakku
+item.axecopper.name=Kupari Kirves
+item.ingottin.name=Tina Harkko
+tile.oretin.name=Tina Malmi
+tile.blockcopper.name=Kupari Lohko
+item.chestplatecopper.name=Kupari Chestplate
+item.helmetcopper.name=Kupari Kypärä
+item.ingotbronze.name=Pronssi Harkko
+tile.blocktin.name=Tina Lohko
+tile.blockbronze.name=Pronssi Lohko
+item.leggingscopper.name=Kupari Housut
+item.bootscopper.name=Kupari Kengät
+tile.reinforcedglassbronze.name=Pronssi Vahvisteinen Lasi §5(Työ Kesken) §4(Renderöi Sivuja Joita Se Ei Saisi Mutta Toimii)
+item.hoecopper.name=Kupari Kuokka
+item.hammerbronze.name=Pronssi Vasara §5(Työ Kesken)
+tile.bronzeenrichedsand.name=Pronssin Täytteinen Hiekka §5(Työ Kesken) §4(Vain Craftaus Itemi Ei Painovoimaa Tällä Hetkellä)
+item.shovelcopper.name=Kupari Lapio
+item.swordcopper.name=Kupari Miekka
+tile.oresilver.name=Hopea Malmi
+tile.blocksilver.name=Hopea Lohko
+item.ingotsilver.name=Hopea Harkko
+item.dustbronze.name=Pronssi Pölyä
+item.alphacopper.name=Kupari Harkko (ALPHA)

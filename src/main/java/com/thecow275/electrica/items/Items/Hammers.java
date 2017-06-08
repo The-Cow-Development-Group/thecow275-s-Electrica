@@ -13,12 +13,13 @@ import net.minecraftforge.oredict.OreDictionary;
  * Created by Juho on 3.9.2016.
  */
 public class Hammers {
-    public static Item hammerBronze;
+    public static Item hammerbronze;
     //below this line are the hammer materials
-    public static ToolMaterial BronzeHammer = EnumHelper.addToolMaterial("BronzeHammer", 0, 500, 5.0F, 4.0F, 12);
+    public static ToolMaterial bronzehammer = EnumHelper.addToolMaterial("bronzehammer", 0, 500, 5.0F, 4.0F, 12);
 
     public static void createItems() {
         //below this line are the hammer tools
-        GameRegistry.registerItem(hammerBronze = new HammerMod("hammerBronze", BronzeHammer), "hammerBronze"); //Bronze Hammer Alpha 0.0.10b
+        GameRegistry.registerItem(hammerbronze = new HammerMod("hammerbronze", bronzehammer), "hammerbronze"); //bronze hammer Alpha 0.0.10b
     }
-    }
+}
+

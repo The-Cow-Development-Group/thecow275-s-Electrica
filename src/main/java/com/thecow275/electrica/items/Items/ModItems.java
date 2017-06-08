@@ -13,43 +13,43 @@ import net.minecraftforge.oredict.OreDictionary;
 public final class ModItems {
 
 
-    public static Item pickaxeCopper;
-	public static Item axeCopper;
+    public static Item pickaxecopper;
+	public static Item axecopper;
 
-    public static Item helmetCopper;
-	public static Item chestplateCopper;
-
-
-
-    public static Item leggingsCopper;
-    public static Item bootsCopper;
+    public static Item helmetcopper;
+	public static Item chestplatecopper;
 
 
-	public static Item hoeCopper;
-    public static Item swordCopper;
-    public static Item shovelCopper;
 
-	//public static ToolMaterial Copper = EnumHelper.addToolMaterial("Copper", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
+    public static Item leggingscopper;
+    public static Item bootscopper;
+
+
+	public static Item hoecopper;
+    public static Item swordcopper;
+    public static Item shovelcopper;
+
+	//public static ToolMaterial copper = EnumHelper.addToolMaterial("copper", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
 
 
     //below this line are the sword materials
-    public static ToolMaterial CopperSword = EnumHelper.addToolMaterial("CopperSword", 0, 500, 1.0F, 2.0F, 14);
+    public static ToolMaterial coppersword = EnumHelper.addToolMaterial("coppersword", 0, 500, 1.0F, 2.0F, 14);
 
 
     //below this line are the pickaxe materials
-    public static ToolMaterial CopperPickaxe = EnumHelper.addToolMaterial("CopperPickaxe", 2, 500, 6.0F, 2.0F, 14);
+    public static ToolMaterial copperpickaxe = EnumHelper.addToolMaterial("copperpickaxe", 2, 500, 6.0F, 2.0F, 14);
 
 
     //below this line are the shovel a.k.a spade materials
-    public static ToolMaterial CopperShovel = EnumHelper.addToolMaterial("CopperShovel", 2, 500, 6.0F, 2.0F, 14);
+    public static ToolMaterial coppershovel = EnumHelper.addToolMaterial("coppershovel", 2, 500, 6.0F, 2.0F, 14);
 
 
     //below this line are the axe materiala
-    public static ToolMaterial CopperAxe = EnumHelper.addToolMaterial("CopperAxe", 2, 500, 6.0F, 2.0F, 14);
+    public static ToolMaterial copperaxe = EnumHelper.addToolMaterial("copperaxe", 2, 500, 6.0F, 2.0F, 14);
 
 
     //balow this line are the hoe materials
-    public static ToolMaterial CopperHoe = EnumHelper.addToolMaterial("CopperHoe", 0, 500, 6.0F, 2.0F, 14);
+    public static ToolMaterial copperhoe = EnumHelper.addToolMaterial("copperhoe", 0, 500, 6.0F, 2.0F, 14);
 
     public static BasicItem19 basicitem;
     public static BasicItem19 baseitem;
@@ -57,8 +57,8 @@ public final class ModItems {
 
 
     //below this line are the armor materials
-	public static ItemArmor.ArmorMaterial CopperArmor = EnumHelper.addArmorMaterial("CopperArmor", "electrica:copperarmor", 16, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0);
-	public static ItemArmor.ArmorMaterial BronzeArmot = EnumHelper.addArmorMaterial("BronzeArmor", "electrica:bronzearmor", 16, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0);
+	public static ItemArmor.ArmorMaterial copperarmor = EnumHelper.addArmorMaterial("copperarmor", "electrica:copperarmor", 16, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0);
+	public static ItemArmor.ArmorMaterial bronzearmor = EnumHelper.addArmorMaterial("bronzearmor", "electrica:bronzearmor", 16, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0);
 	public static void init(){
 	    basicitem = new BasicItem19("basicitem");
         baseitem = new BasicItem19("baseitem");
@@ -74,28 +74,28 @@ public final class ModItems {
         // 1.11 Readynes Test Item
 
         //below this line are the pickaxe tools
-        GameRegistry.registerItem(pickaxeCopper = new PickaxeMod("pickaxeCopper", CopperPickaxe), "pickaxeCopper"); //Copper Pickaxe
+        GameRegistry.registerItem(pickaxecopper = new PickaxeMod("pickaxecopper", copperpickaxe), "pickaxecopper"); //copper pickaxe
 
         //below this line are the axe tools
-        GameRegistry.registerItem(axeCopper = new AxeMod("axeCopper", CopperAxe), "axeCopper");
+        GameRegistry.registerItem(axecopper = new AxeMod("axecopper", copperaxe), "axecopper");
 
         //below this line are the hoe tools
-        GameRegistry.registerItem(hoeCopper = new HoeMod("hoeCopper", CopperHoe), "hoeCopper");
+        GameRegistry.registerItem(hoecopper = new HoeMod("hoecopper", copperhoe), "hoecopper");
 
         //below this line are the sword weapon tools
-        GameRegistry.registerItem(swordCopper = new SwordMod("swordCopper", CopperSword), "swordCopper");
+        GameRegistry.registerItem(swordcopper = new SwordMod("swordcopper", coppersword), "swordcopper");
 
         //below this line are the shovel tools
-        GameRegistry.registerItem(shovelCopper = new ShovelMod("shovelCopper", CopperShovel), "shovelCopper");
+        GameRegistry.registerItem(shovelcopper = new ShovelMod("shovelcopper", coppershovel), "shovelcopper");
         //below this line is the copper armor groups
         // helmet
-        GameRegistry.registerItem(helmetCopper = new ItemModArmor("helmetCopper", CopperArmor, 1, EntityEquipmentSlot.HEAD), "helmetCopper");
+        GameRegistry.registerItem(helmetcopper = new ItemModArmor("helmetcopper", copperarmor, 1, EntityEquipmentSlot.HEAD), "helmetcopper");
 
         // ChestPlate
-        GameRegistry.registerItem(chestplateCopper = new ItemModArmor("chestplateCopper", CopperArmor, 1, EntityEquipmentSlot.CHEST), "chestplateCopper");
+        GameRegistry.registerItem(chestplatecopper = new ItemModArmor("chestplatecopper", copperarmor, 1, EntityEquipmentSlot.CHEST), "chestplatecopper");
         // Leggings
-        GameRegistry.registerItem(leggingsCopper = new ItemModArmor("leggingsCopper", CopperArmor, 2, EntityEquipmentSlot.LEGS), "leggingsCopper");
+        GameRegistry.registerItem(leggingscopper = new ItemModArmor("leggingscopper", copperarmor, 2, EntityEquipmentSlot.LEGS), "leggingscopper");
         // Boots
-        GameRegistry.registerItem(bootsCopper = new ItemModArmor("bootsCopper", CopperArmor, 1, EntityEquipmentSlot.FEET), "bootsCopper");
+        GameRegistry.registerItem(bootscopper = new ItemModArmor("bootscopper", copperarmor, 1, EntityEquipmentSlot.FEET), "bootscopper");
     }
 }

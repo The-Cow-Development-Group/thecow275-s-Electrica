@@ -10,15 +10,15 @@ import net.minecraft.item.Item;
 public final class BlockRenderRegister {
 	public static String modid = Main.MODID;
 		public static void registerBlockRenderer(){
-			reg(ModBlocks.oreCopper);
-			reg(ModBlocks.oreTin);
-			reg(ModBlocks.blockCopper);
-			reg(ModBlocks.blockBronze);
-			reg(ModBlocks.blockTin);
-			reg(ModBlocks.reinforcedGlassBronze);
-			reg(ModBlocks.BronzeEnrichedSand);
-			reg(ModBlocks.oreSilver);
-            reg(ModBlocks.blockSilver);
+			reg(ModBlocks.orecopper);
+			reg(ModBlocks.oretin);
+			reg(ModBlocks.blockcopper);
+			reg(ModBlocks.blockbronze);
+			reg(ModBlocks.blocktin);
+			reg(ModBlocks.reinforcedglassbronze);
+			reg(ModBlocks.bronzeenrichedsand);
+			reg(ModBlocks.oresilver);
+            reg(ModBlocks.blocksilver);
 		}
 		public static void reg(Block block){
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher()

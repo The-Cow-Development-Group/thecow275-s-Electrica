@@ -16,27 +16,27 @@ import net.minecraftforge.oredict.OreDictionary;
 import static net.minecraftforge.fml.common.registry.GameRegistry.register;
 
 public class Ingots {
-    // public static Item ingotTin;
-    // public static Item ingotCopper;
-    public static Item ingotBronze;
-    public static Item ingotSilver;
-    public static Item dustBronze;
-    public static ItemBase ingotCopper;
+    // public static Item ingottin;
+    // public static Item ingotcopper;
+    public static Item ingotbronze;
+    public static Item ingotsilver;
+    public static Item dustbronze;
+    public static ItemBase ingotcopper;
 
 
 
     public static void createItems(){
-        //GameRegistry.registerItem(ingotTin = new BasicItem("ingotTin"), "ingotTin"); //Tin Ingot
-        //GameRegistry.registerItem(ingotCopper = new BasicItem("ingotCopper"), "ingotCopper"); // Copper Ingot
-        GameRegistry.registerItem(ingotBronze = new BasicItem("ingotBronze"), "ingotBronze"); // Bronze Ingot
-        GameRegistry.registerItem(ingotSilver = new BasicItem("ingotSilver"), "ingotSilver"); // Silver Ingot
-        GameRegistry.registerItem(dustBronze = new BasicItem("dustBronze"), "dustBronze");
+        //GameRegistry.registerItem(ingottin = new BasicItem("ingottin"), "ingottin"); //tin Ingot
+        //GameRegistry.registerItem(ingotcopper = new BasicItem("ingotcopper"), "ingotcopper"); // copper Ingot
+        GameRegistry.registerItem(ingotbronze = new BasicItem("ingotbronze"), "ingotbronze"); // bronze Ingot
+        GameRegistry.registerItem(ingotsilver = new BasicItem("ingotsilver"), "ingotsilver"); // silver Ingot
+        GameRegistry.registerItem(dustbronze = new BasicItem("dustbronze"), "dustbronze");
 
-        //OreDictionary.registerOre("ingotCopper", ingotCopper);
-        OreDictionary.registerOre("ingotSilver", ingotSilver);
-        //OreDictionary.registerOre("ingotTin", ingotTin);
-        OreDictionary.registerOre("ingotBronze", ingotBronze);
-        OreDictionary.registerOre("dustBronze", dustBronze);
+        //OreDictionary.registerOre("ingotcopper", ingotcopper);
+        OreDictionary.registerOre("ingotsilver", ingotsilver);
+        //OreDictionary.registerOre("ingottin", ingottin);
+        OreDictionary.registerOre("ingotbronze", ingotbronze);
+        OreDictionary.registerOre("dustbronze", dustbronze);
     }
 
 }
