@@ -46,7 +46,7 @@ catchError() {
 
                     step([$class: 'JUnitResultArchiver', testResults: '**/build/test-results/TEST-*.xml'])
                 } catch (e) {
-                    currentBuild.result = "STABLE"
+                    currentBuild.result = "UNSTABLE"
                     echo "Exception caught while running test: ${e}"
                 }
             }
