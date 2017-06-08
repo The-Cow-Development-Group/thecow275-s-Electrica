@@ -4,7 +4,6 @@ import com.thecow275.electrica.Main;
 import com.thecow275.electrica.items.Items.Hammers;
 import com.thecow275.electrica.items.Items.Ingots;
 import com.thecow275.electrica.items.Items.ModItems;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
