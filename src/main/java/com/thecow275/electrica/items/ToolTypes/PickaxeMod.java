@@ -1,4 +1,4 @@
-package com.thecow275.electrica.items;
+package com.thecow275.electrica.items.ToolTypes;
 import net.minecraft.item.ItemPickaxe;
 
 public class PickaxeMod extends ItemPickaxe {

@@ -1,5 +1,7 @@
-package com.thecow275.electrica.items;
+package com.thecow275.electrica.items.Items;
 
+import com.thecow275.electrica.items.ItemTypes.*;
+import com.thecow275.electrica.items.ToolTypes.*;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -9,19 +11,24 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
 public final class ModItems {
-	public static Item ingotTin;
-	public static Item ingotCopper;
-	public static Item pickaxeCopper;
+
+
+    public static Item pickaxeCopper;
 	public static Item axeCopper;
-	public static Item helmetCopper;
+
+    public static Item helmetCopper;
 	public static Item chestplateCopper;
-    public static Item ingotBronze;
+
+
+
     public static Item leggingsCopper;
     public static Item bootsCopper;
-	public static Item hammerBronze;
+
+
 	public static Item hoeCopper;
     public static Item swordCopper;
     public static Item shovelCopper;
+
 	//public static ToolMaterial Copper = EnumHelper.addToolMaterial("Copper", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
 
 
@@ -44,23 +51,27 @@ public final class ModItems {
     //balow this line are the hoe materials
     public static ToolMaterial CopperHoe = EnumHelper.addToolMaterial("CopperHoe", 0, 500, 6.0F, 2.0F, 14);
 
+    public static BasicItem19 basicitem;
+    public static BasicItem19 baseitem;
 
-    //below this line are the hammer materials
-    public static ToolMaterial BronzeHammer = EnumHelper.addToolMaterial("BronzeHammer", 0, 500, 5.0F, 4.0F, 12);
 
 
     //below this line are the armor materials
 	public static ItemArmor.ArmorMaterial CopperArmor = EnumHelper.addArmorMaterial("CopperArmor", "electrica:copperarmor", 16, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0);
-	
-	public static void createItems(){
+	public static ItemArmor.ArmorMaterial BronzeArmot = EnumHelper.addArmorMaterial("BronzeArmor", "electrica:bronzearmor", 16, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0);
+	public static void init(){
+	    basicitem = new BasicItem19("basicitem");
+        baseitem = new BasicItem19("baseitem");
+    }
+
+    public static void createItems(){
 
 	    //below this line are the ingot items
-	    GameRegistry.registerItem(ingotTin = new BasicItem("ingotTin"), "ingotTin"); //Tin Ingot
-		GameRegistry.registerItem(ingotCopper = new BasicItem("ingotCopper"), "ingotCopper"); // Copper Ingot
-        GameRegistry.registerItem(ingotBronze = new BasicItem("ingotBronze"), "ingotBronze"); // Bronze Ingot
 
-        //below this line are the hammer tools
-        GameRegistry.registerItem(hammerBronze = new HammerMod ("hammerBronze", BronzeHammer), "hammerBronze"); //Bronze Hammer Alpha 0.0.10b
+
+
+
+        // 1.11 Readynes Test Item
 
         //below this line are the pickaxe tools
         GameRegistry.registerItem(pickaxeCopper = new PickaxeMod("pickaxeCopper", CopperPickaxe), "pickaxeCopper"); //Copper Pickaxe
@@ -79,7 +90,8 @@ public final class ModItems {
         //below this line is the copper armor groups
         // helmet
         GameRegistry.registerItem(helmetCopper = new ItemModArmor("helmetCopper", CopperArmor, 1, EntityEquipmentSlot.HEAD), "helmetCopper");
-	    // ChestPlate
+
+        // ChestPlate
         GameRegistry.registerItem(chestplateCopper = new ItemModArmor("chestplateCopper", CopperArmor, 1, EntityEquipmentSlot.CHEST), "chestplateCopper");
         // Leggings
         GameRegistry.registerItem(leggingsCopper = new ItemModArmor("leggingsCopper", CopperArmor, 2, EntityEquipmentSlot.LEGS), "leggingsCopper");

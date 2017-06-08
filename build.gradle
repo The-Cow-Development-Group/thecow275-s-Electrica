@@ -20,12 +20,12 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "Alpha 0.0.11a"
+version = "Beta 0.3.0a"
 group= "com.thecow275.thecow275" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "electrica"
 
 minecraft {
-    version = "1.10-12.18.0.2000-1.10.0"
+    version = "1.10.2-12.18.1.2011"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.

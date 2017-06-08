@@ -1,18 +1,12 @@
 package com.thecow275.electrica.blocks;
 
-import com.thecow275.electrica.ClientProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockProperties;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import scala.reflect.internal.TreeInfo;
-import scala.tools.nsc.transform.patmat.Logic;
-
-import static net.minecraft.util.BlockRenderLayer.CUTOUT_MIPPED;
 
 
 public class SeeTroughBlock extends Block {
@@ -34,7 +28,7 @@ public class SeeTroughBlock extends Block {
 
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getBlockLayer() {
-        return BlockRenderLayer.CUTOUT;
+        return BlockRenderLayer.CUTOUT_MIPPED;
     }
     public boolean isFullCube(IBlockState p_isFullCube_1_) {
         return true;

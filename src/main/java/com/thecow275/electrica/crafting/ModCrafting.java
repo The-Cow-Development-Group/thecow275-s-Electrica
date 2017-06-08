@@ -1,104 +1,144 @@
 package com.thecow275.electrica.crafting;
-import com.thecow275.electrica.blocks.ModBlocks;
-import com.thecow275.electrica.items.ModItems;
-
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
+
+import static com.thecow275.electrica.blocks.ModBlocks.*;
+import static com.thecow275.electrica.items.BaseItem1102.ModItems1102.ingotcopper;
+import static com.thecow275.electrica.items.BaseItem1102.ModItems1102.ingottin;
+import static com.thecow275.electrica.items.Items.Hammers.*;
+import static com.thecow275.electrica.items.Items.Ingots.*;
+import static com.thecow275.electrica.items.BaseItem1102.ModItems1102.*;
+import static com.thecow275.electrica.items.Items.ModItems.*;
 
 
 public final class ModCrafting {
 	public static void initCrafting(){
 		//shapeless recipe for making  Copper Block out of four Copper Ingots
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockTin),
+        GameRegistry.addRecipe(new ShapedOreRecipe(ingotBronze,
+                "***",
+                "***",
+                "***",
+                '*', "dustBronze"));
+
+        GameRegistry.addRecipe(new ShapedOreRecipe(blockTin,
 			"###",
 			"###",
 			"###",
-			'#', ModItems.ingotTin);
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockBronze),
+			'#', "ingottin"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(blockBronze,
                 "###",
                 "###",
                 "###",
-                '#', ModItems.ingotBronze);
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotCopper,9), new ItemStack(ModBlocks.blockCopper));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotBronze,9), new ItemStack(ModBlocks.blockBronze));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotTin,9), new ItemStack(ModBlocks.blockTin));
+                '#', "ingotBronze"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ingotcopper,9), new Object[]{
+            "blockCopper"
+        }));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ingotBronze,9), new Object[]{
+            "blockBronze"
+        }));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ingottin,9), new Object[]{
+            "blockTin"
+        }));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ingotSilver,9), new Object[]{
+            "blockSilver"
+        }));
 	// shaped recipe for making Copper Ore out of 3 iron ingots
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.oreCopper),
+        GameRegistry.addRecipe(new ShapedOreRecipe(oreCopper,
 			"#  ",
 			" # ",
 			"  #",
-			'#', Blocks.IRON_BLOCK);
-        GameRegistry.addRecipe(new ItemStack(ModItems.pickaxeCopper),
+			'#', "blockDiamond"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(hoeCopper,
+				"aa ",
+				" b ",
+				" b ",
+				'a', "ingotcopper", 'b', "stickWood"));
+
+		GameRegistry.addRecipe(new ShapedOreRecipe(swordCopper,
+				" a ",
+				" a ",
+				" b ",
+				'a', "ingotcopper", 'b', "stickWood"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(shovelCopper,
+				" a ",
+				" b ",
+				" b ",
+				'a', "ingotcopper", 'b', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(pickaxeCopper,
 			"aaa",
 			" b ",
 			" b ",
-			'a', ModItems.ingotCopper, 'b', Items.STICK);
-        GameRegistry.addRecipe(new ItemStack(ModItems.axeCopper),
-                "aa ",
-                "ab ",
-                " b ",
-                'a', ModItems.ingotCopper, 'b', Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModItems.hoeCopper),
-			"aa",
-			" b",
-			" b",
-			'a', ModItems.ingotCopper, 'b', Items.STICK);
-
-        GameRegistry.addRecipe(new ItemStack(ModItems.swordCopper),
-            " a ",
-            " a ",
-            " b ",
-                'a', ModItems.ingotCopper, 'b', Items.STICK);
-        GameRegistry.addRecipe(new ItemStack(ModItems.shovelCopper),
-                " a ",
-                " b ",
-                " b ",
-                'a', ModItems.ingotCopper, 'b', Items.STICK);
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockCopper),
+			'a', "ingotcopper", 'b', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(axeCopper,
+			"aa ",
+			"ab ",
+			" b ",
+			'a', "ingotcopper", 'b', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(blockCopper,
 			"ddd",
 			"ddd",
 			"ddd",
-			'd', ModItems.ingotCopper);
-        GameRegistry.addRecipe(new ItemStack(ModItems.ingotBronze,4),
-                "dd",
-                "ad",
-
-                'd', ModItems.ingotCopper, 'a', ModItems.ingotTin);
-        GameRegistry.addRecipe(new ItemStack(ModItems.helmetCopper),
+			'd', "ingotcopper"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(blockSilver,
+                "###",
+                "###",
+                "###",
+                '#', "ingotSilver"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(hammerBronze,
+                "AAA",
+                "AVA",
+                " V ",
+                'A', "ingotBronze", 'V', "stickWood"
+                ));
+       // GameRegistry.addRecipe(new ShapelessOreRecipe(ingotBronze,
+       //         "dd",
+       //         "ad",
+       //         'd', "ingotCopper", 'a', "ingotTin"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ingotBronze,4), new Object[]{
+                "ingotcopper", "ingottin", "ingotcopper", "ingotcopper"
+        }));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(dustBronze,9), new Object[]{
+            "ingotBronze"
+        }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(helmetCopper,
                 "ddd",
                 "d d",
                 "   ",
-                'd', ModItems.ingotCopper);
-        GameRegistry.addRecipe(new ItemStack(ModItems.chestplateCopper),
+                'd', "ingotcopper"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(chestplateCopper,
                 "d d",
                 "ddd",
                 "ddd",
-                'd', ModItems.ingotCopper);
-		GameRegistry.addRecipe(new ItemStack(ModItems.leggingsCopper),
+                'd', "ingotcopper"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(leggingsCopper,
 				"ddd",
 				"d d",
 				"d d",
-				'd', ModItems.ingotCopper);
-		GameRegistry.addRecipe(new ItemStack(ModItems.bootsCopper),
+				'd', "ingotcopper"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(bootsCopper,
 				"   ",
 				"d d",
 				"d d",
-				'd', ModItems.ingotCopper);
-		GameRegistry.addRecipe(new ItemStack(Items.SADDLE),
+				'd', "ingotcopper"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(Items.SADDLE,
 				"aaa",
 		        "ada",
 		        "isi",
-		        'd', Blocks.DIAMOND_BLOCK, 'a', Items.LEATHER, 'i', Items.IRON_INGOT, 's', Items.EMERALD);
-	    GameRegistry.addRecipe(new ItemStack(ModBlocks.BronzeEnrichedSand),
+		        'd', "blockDiamond", 'a', "leather", 'i', "ingotIron", 's', "gemEmerald"));
+	    GameRegistry.addRecipe(new ShapedOreRecipe(BronzeEnrichedSand,
                 "aba",
                 "bab",
                 "aba",
-                'a', Blocks.SAND, 'b', ModItems.ingotBronze);
+                'a', "sand", 'b', "ingotBronze"));
 	// smelting recipe for making copper ingots out of copper ore
-	GameRegistry.addSmelting(ModBlocks.oreCopper, new ItemStack(ModItems.ingotCopper), 1.0f);
-	GameRegistry.addSmelting(ModBlocks.oreTin, new ItemStack(ModItems.ingotTin), 1.0f);
-    GameRegistry.addSmelting(ModBlocks.BronzeEnrichedSand, new ItemStack(ModBlocks.reinforcedGlassBronze), 2.0f);
+	GameRegistry.addSmelting(oreCopper, new ItemStack(ingotcopper), 1.0f);
+	GameRegistry.addSmelting(oreTin, new ItemStack(ingottin), 1.0f);
+    GameRegistry.addSmelting(BronzeEnrichedSand, new ItemStack(reinforcedGlassBronze), 20.0f);
+        GameRegistry.addSmelting(oreSilver, new ItemStack(ingotSilver), 1.0f);
+
+
 	}
 	}

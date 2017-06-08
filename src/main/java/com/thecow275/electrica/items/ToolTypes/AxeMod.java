@@ -1,5 +1,4 @@
-package com.thecow275.electrica.items;
-		import net.minecraft.item.ItemAxe;
+package com.thecow275.electrica.items.ToolTypes;
 
 public class AxeMod extends AxeFix {
 
