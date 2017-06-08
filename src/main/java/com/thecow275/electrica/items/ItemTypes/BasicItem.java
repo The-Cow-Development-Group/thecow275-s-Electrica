@@ -1,4 +1,4 @@
-package com.thecow275.electrica.items;
+package com.thecow275.electrica.items.ItemTypes;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

@@ -20,14 +20,15 @@ public class thecow275WorldGen implements IWorldGenerator {
 	private WorldGenerator gen_copper_ore; 	// Generates Copper Ore (used in Overworld)
 	private WorldGenerator gen_tin_ore;		// Generates Tin Ore (used in Overworld)
 	private WorldGenerator gen_cobblestone;		// Generates Stone (used in combination with Tin)
-
+    private WorldGenerator gen_silver_ore; // Generates Silver Ore (used in Overworld)
 	//@formatter:on
 
 	public thecow275WorldGen() {
 
 		this.gen_copper_ore = new WorldGenMinable(ModBlocks.oreCopper.getDefaultState(), 8);
-		this.gen_cobblestone = new WorldGenMinable(Blocks.COBBLESTONE.getDefaultState(), 6, BlockMatcher.forBlock(ModBlocks.oreTin));
+		this.gen_cobblestone = new WorldGenMinable(Blocks.COBBLESTONE.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.LAVA));
 		this.gen_tin_ore = new WorldGenSingleMinable(ModBlocks.oreTin.getDefaultState());
+		this.gen_silver_ore = new WorldGenMinable(ModBlocks.oreSilver.getDefaultState(), 7);
 	}
 
 	@Override
@@ -36,6 +37,7 @@ public class thecow275WorldGen implements IWorldGenerator {
 		case 0: // Overworld
 			this.runGenerator(this.gen_copper_ore, world, random, chunkX, chunkZ, 20, 0, 64);
 			this.runGenerator(this.gen_tin_ore, world, random, chunkX, chunkZ, 20, 0, 64);
+            this.runGenerator(this.gen_silver_ore, world, random, chunkX, chunkZ, 20, 0, 64);
 			break;
 		case -1: // Nether
 

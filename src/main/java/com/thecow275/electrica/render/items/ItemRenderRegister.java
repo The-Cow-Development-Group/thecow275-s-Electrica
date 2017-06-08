@@ -1,7 +1,9 @@
 package com.thecow275.electrica.render.items;
 
 import com.thecow275.electrica.Main;
-import com.thecow275.electrica.items.ModItems;
+import com.thecow275.electrica.items.Items.Hammers;
+import com.thecow275.electrica.items.Items.Ingots;
+import com.thecow275.electrica.items.Items.ModItems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -11,9 +13,10 @@ public class ItemRenderRegister {
 	
 	public static void registerItemRenderer(){
 		// ingot item render register
-		reg(ModItems.ingottin);
-		reg(ModItems.ingotCopper);
-        reg(ModItems.ingotBronze);
+		//reg(Ingots.ingotTin);
+		// reg(Ingots.ingotCopper);
+        reg(Ingots.ingotBronze);
+        reg(Ingots.ingotSilver);
         // blah blah item render register
 		reg(ModItems.pickaxeCopper);
 		reg(ModItems.axeCopper);
@@ -21,9 +24,14 @@ public class ItemRenderRegister {
 		reg(ModItems.chestplateCopper);
         reg(ModItems.bootsCopper);
         reg(ModItems.leggingsCopper);
-		reg(ModItems.hammerBronze);
+		reg(Hammers.hammerBronze);
 		reg(ModItems.hoeCopper);
         reg(ModItems.swordCopper);
+		reg(ModItems.shovelCopper);
+		reg(ModItems.baseitem);
+		reg(ModItems.basicitem);
+
+        reg(Ingots.dustBronze);
 	}
 	public static String modid = Main.MODID;
 	public static void reg(Item item) {

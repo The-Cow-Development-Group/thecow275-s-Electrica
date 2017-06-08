@@ -1,4 +1,4 @@
-package com.thecow275.electrica.items;
+package com.thecow275.electrica.items.ToolTypes;
 import net.minecraft.item.ItemHoe;
 
 public class HoeMod extends ItemHoe {

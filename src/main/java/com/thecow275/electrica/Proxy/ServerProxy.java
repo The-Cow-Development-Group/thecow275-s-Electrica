@@ -1,4 +1,4 @@
-package com.thecow275.electrica;
+package com.thecow275.electrica.Proxy;
 
 import	net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import	net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
