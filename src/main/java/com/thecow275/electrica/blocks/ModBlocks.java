@@ -6,36 +6,36 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public final class ModBlocks {
 
-	public static Block oreCopper;
-	public static Block oreTin;
-	public static Block blockCopper;
-    public static Block blockTin;
-    public static Block blockBronze;
-    public static Block reinforcedGlassBronze;
-	public static Block BronzeEnrichedSand;
-	public static Block oreSilver;
-    public static Block blockSilver;
+	public static Block orecopper;
+	public static Block oretin;
+	public static Block blockcopper;
+    public static Block blocktin;
+    public static Block blockbronze;
+    public static Block reinforcedglassbronze;
+	public static Block bronzeenrichedsand;
+	public static Block oresilver;
+    public static Block blocksilver;
 
 	
 	public static void createBlocks(){
-	GameRegistry.registerBlock(oreCopper = new BasicBlock("oreCopper").setLightLevel(0.0f), "oreCopper");
-	GameRegistry.registerBlock(oreTin = new BasicBlock("oreTin").setLightLevel(0.0f), "oreTin");
-	GameRegistry.registerBlock(blockCopper = new BasicBlock("blockCopper").setLightLevel(0.0f), "blockCopper");
-        GameRegistry.registerBlock(blockTin = new BasicBlock("blockTin"), "blockTin");
-	GameRegistry.registerBlock(blockBronze = new BasicBlock("blockBronze"), "blockBronze");
-		GameRegistry.registerBlock(BronzeEnrichedSand = new BasicBlock("BronzeEnrichedSand"), "BronzeEnrichedSand");
-		GameRegistry.registerBlock(reinforcedGlassBronze = new SeeTroughBlock("reinforcedGlassBronze"), "reinforcedGlassBronze");
-        GameRegistry.registerBlock(oreSilver = new BasicBlock("oreSilver"), "oreSilver");
-        GameRegistry.registerBlock(blockSilver = new BasicBlock("blockSilver"), "blockSilver");
+	GameRegistry.registerBlock(orecopper = new BasicBlock("orecopper").setLightLevel(0.0f), "orecopper");
+	GameRegistry.registerBlock(oretin = new BasicBlock("oretin").setLightLevel(0.0f), "oretin");
+	GameRegistry.registerBlock(blockcopper = new BasicBlock("blockcopper").setLightLevel(0.0f), "blockcopper");
+        GameRegistry.registerBlock(blocktin = new BasicBlock("blocktin"), "blocktin");
+	GameRegistry.registerBlock(blockbronze = new BasicBlock("blockbronze"), "blockbronze");
+		GameRegistry.registerBlock(bronzeenrichedsand = new BasicBlock("bronzeenrichedsand"), "bronzeenrichedsand");
+		GameRegistry.registerBlock(reinforcedglassbronze = new SeeTroughBlock("reinforcedglassbronze"), "reinforcedglassbronze");
+        GameRegistry.registerBlock(oresilver = new BasicBlock("oresilver"), "oresilver");
+        GameRegistry.registerBlock(blocksilver = new BasicBlock("blocksilver"), "blocksilver");
 
-        OreDictionary.registerOre("oreCopper", oreCopper);
-        OreDictionary.registerOre("oreTins", oreTin);
-        OreDictionary.registerOre("oreSilver", oreSilver);
-        OreDictionary.registerOre("blockCopper", blockCopper);
-        OreDictionary.registerOre("blockTin", blockTin);
-        OreDictionary.registerOre("blockBronze", blockBronze);
-        OreDictionary.registerOre("blockSilver", blockSilver);
-        OreDictionary.registerOre("reinforcedGlassBronze", reinforcedGlassBronze);
-        OreDictionary.registerOre("BronzeEnrichedSand", BronzeEnrichedSand);
+        OreDictionary.registerOre("orecopper", orecopper);
+        OreDictionary.registerOre("oretins", oretin);
+        OreDictionary.registerOre("oresilver", oresilver);
+        OreDictionary.registerOre("blockcopper", blockcopper);
+        OreDictionary.registerOre("blocktin", blocktin);
+        OreDictionary.registerOre("blockbronze", blockbronze);
+        OreDictionary.registerOre("blocksilver", blocksilver);
+        OreDictionary.registerOre("reinforcedglassbronze", reinforcedglassbronze);
+        OreDictionary.registerOre("bronzeenrichedsand", bronzeenrichedsand);
     }
 }

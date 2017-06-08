@@ -25,10 +25,10 @@ public class thecow275WorldGen implements IWorldGenerator {
 
 	public thecow275WorldGen() {
 
-		this.gen_copper_ore = new WorldGenMinable(ModBlocks.oreCopper.getDefaultState(), 8);
+		this.gen_copper_ore = new WorldGenMinable(ModBlocks.orecopper.getDefaultState(), 8);
 		this.gen_cobblestone = new WorldGenMinable(Blocks.COBBLESTONE.getDefaultState(), 6, BlockMatcher.forBlock(Blocks.LAVA));
-		this.gen_tin_ore = new WorldGenSingleMinable(ModBlocks.oreTin.getDefaultState());
-		this.gen_silver_ore = new WorldGenMinable(ModBlocks.oreSilver.getDefaultState(), 7);
+		this.gen_tin_ore = new WorldGenSingleMinable(ModBlocks.oretin.getDefaultState());
+		this.gen_silver_ore = new WorldGenMinable(ModBlocks.oresilver.getDefaultState(), 7);
 	}
 
 	@Override

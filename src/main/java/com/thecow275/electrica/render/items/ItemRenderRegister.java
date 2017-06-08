@@ -13,24 +13,24 @@ public class ItemRenderRegister {
 	public static void registerItemRenderer(){
 		// ingot item render register
 		//reg(Ingots.ingotTin);
-		// reg(Ingots.ingotCopper);
-        reg(Ingots.ingotBronze);
-        reg(Ingots.ingotSilver);
+		// reg(Ingots.ingotcopper);
+        reg(Ingots.ingotbronze);
+        reg(Ingots.ingotsilver);
         // blah blah item render register
-		reg(ModItems.pickaxeCopper);
-		reg(ModItems.axeCopper);
-		reg(ModItems.helmetCopper);
-		reg(ModItems.chestplateCopper);
-        reg(ModItems.bootsCopper);
-        reg(ModItems.leggingsCopper);
-		reg(Hammers.hammerBronze);
-		reg(ModItems.hoeCopper);
-        reg(ModItems.swordCopper);
-		reg(ModItems.shovelCopper);
+		reg(ModItems.pickaxecopper);
+		reg(ModItems.axecopper);
+		reg(ModItems.helmetcopper);
+		reg(ModItems.chestplatecopper);
+        reg(ModItems.bootscopper);
+        reg(ModItems.leggingscopper);
+		reg(Hammers.hammerbronze);
+		reg(ModItems.hoecopper);
+        reg(ModItems.swordcopper);
+		reg(ModItems.shovelcopper);
 		reg(ModItems.baseitem);
 		reg(ModItems.basicitem);
 
-        reg(Ingots.dustBronze);
+        reg(Ingots.dustbronze);
 	}
 	public static String modid = Main.MODID;
 	public static void reg(Item item) {
