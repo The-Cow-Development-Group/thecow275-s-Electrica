@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
 public final class ModItems {
-	public static Item ingotTin;
+	public static Item ingottin;
 	public static Item ingotCopper;
 	public static Item pickaxeCopper;
 	public static Item axeCopper;
@@ -55,7 +55,7 @@ public final class ModItems {
 	public static void createItems(){
 
 	    //below this line are the ingot items
-	    GameRegistry.registerItem(ingotTin = new BasicItem("ingotTin"), "ingotTin"); //Tin Ingot
+	    GameRegistry.registerItem(ingottin = new BasicItem("ingottin"), "ingottin"); //Tin Ingot
 		GameRegistry.registerItem(ingotCopper = new BasicItem("ingotCopper"), "ingotCopper"); // Copper Ingot
         GameRegistry.registerItem(ingotBronze = new BasicItem("ingotBronze"), "ingotBronze"); // Bronze Ingot
 

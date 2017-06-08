@@ -15,7 +15,7 @@ public final class ModCrafting {
 			"###",
 			"###",
 			"###",
-			'#', ModItems.ingotTin);
+			'#', ModItems.ingottin);
         GameRegistry.addRecipe(new ItemStack(ModBlocks.blockBronze),
                 "###",
                 "###",
@@ -23,7 +23,7 @@ public final class ModCrafting {
                 '#', ModItems.ingotBronze);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotCopper,9), new ItemStack(ModBlocks.blockCopper));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotBronze,9), new ItemStack(ModBlocks.blockBronze));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotTin,9), new ItemStack(ModBlocks.blockTin));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingottin,9), new ItemStack(ModBlocks.blockTin));
 	// shaped recipe for making Copper Ore out of 3 iron ingots
         GameRegistry.addRecipe(new ItemStack(ModBlocks.oreCopper),
 			"#  ",
@@ -65,7 +65,7 @@ public final class ModCrafting {
                 "dd",
                 "ad",
 
-                'd', ModItems.ingotCopper, 'a', ModItems.ingotTin);
+                'd', ModItems.ingotCopper, 'a', ModItems.ingottin);
         GameRegistry.addRecipe(new ItemStack(ModItems.helmetCopper),
                 "ddd",
                 "d d",
@@ -98,7 +98,7 @@ public final class ModCrafting {
                 'a', Blocks.SAND, 'b', ModItems.ingotBronze);
 	// smelting recipe for making copper ingots out of copper ore
 	GameRegistry.addSmelting(ModBlocks.oreCopper, new ItemStack(ModItems.ingotCopper), 1.0f);
-	GameRegistry.addSmelting(ModBlocks.oreTin, new ItemStack(ModItems.ingotTin), 1.0f);
+	GameRegistry.addSmelting(ModBlocks.oreTin, new ItemStack(ModItems.ingottin), 1.0f);
     GameRegistry.addSmelting(ModBlocks.BronzeEnrichedSand, new ItemStack(ModBlocks.reinforcedGlassBronze), 2.0f);
 	}
 	}
