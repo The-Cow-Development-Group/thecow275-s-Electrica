@@ -11,7 +11,7 @@ public class ItemRenderRegister {
 	
 	public static void registerItemRenderer(){
 		// ingot item render register
-		reg(ModItems.ingotTin);
+		reg(ModItems.ingottin);
 		reg(ModItems.ingotCopper);
         reg(ModItems.ingotBronze);
         // blah blah item render register
